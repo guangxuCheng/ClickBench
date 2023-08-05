@@ -7,6 +7,7 @@ DOWNLOAD_URL=https://releases.starrocks.io/starrocks/StarRocks-3.0.0-preview.tar
 # Install
 wget $DOWNLOAD_URL
 tar zxvf StarRocks-${VERSION}.tar.gz
+rm StarRocks-${VERSION}.tar.gz
 
 cd StarRocks-${VERSION}/
 
@@ -21,6 +22,7 @@ IPADDR=`hostname -i`
 export STARROCKS_HOME=`pwd`
 mkdir -p meta storage
 
+echo "Start Cluster..."
 # Start Frontend
 echo "meta_dir = ${STARROCKS_HOME}/meta " >> fe/conf/fe.conf
 fe/bin/start_fe.sh --daemon
@@ -36,6 +38,7 @@ mysql -h 127.0.0.1 -P9030 -uroot -e "ALTER SYSTEM ADD BACKEND '${IPADDR}:9050' "
 # wait some seconds util be joins
 sleep 30
 
+echo "Start to download data..."
 # Prepare Data
 cd ../
 wget --no-verbose --continue 'https://datasets.clickhouse.com/hits_compatible/hits.tsv.gz'
