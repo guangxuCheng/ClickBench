@@ -2,12 +2,12 @@
 
 # This benchmark should run on Amazon Linux
 
-VERSION=3.0.0-preview
-DOWNLOAD_URL=https://releases.starrocks.io/starrocks/StarRocks-3.0.0-preview.tar.gz
+VERSION=$1
+# DOWNLOAD_URL=https://releases.starrocks.io/starrocks/StarRocks-3.0.0-preview.tar.gz
 # Install
-wget $DOWNLOAD_URL
+#wget $DOWNLOAD_URL
+rm -rf StarRocks-${VERSION}
 tar zxvf StarRocks-${VERSION}.tar.gz
-rm StarRocks-${VERSION}.tar.gz
 
 cd StarRocks-${VERSION}/
 
