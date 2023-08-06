@@ -39,7 +39,7 @@ be/bin/start_be.sh --daemon
 
 # Setup cluster
 # wait some seconds util fe can serve
-#sleep 30
+sleep 30
 #mysql -h 127.0.0.1 -P9030 -uroot -e "ALTER SYSTEM ADD BACKEND '${IPADDR}:9050' "
 # wait some seconds util be joins
 #sleep 30
