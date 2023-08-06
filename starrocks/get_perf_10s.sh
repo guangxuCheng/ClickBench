@@ -7,6 +7,7 @@ fi
 
 pid=$1
 query_index=$2
+echo "get perf query: $2"
 
 script_dir=$(dirname "$0")
 queries_file="$script_dir/queries.sql"
@@ -32,7 +33,7 @@ wait $perf_pid
 exit_status=$?
 
 if [ $exit_status -ne 0 ] && [ $exit_status -ne 130 ]; then
-    echo "Error: 'perf record' command did not terminate correctly"
+    echo "Error: 'perf record' command did not terminate correctly, exit_status=$exit_status"
     exit 1
 fi
 
