@@ -24,7 +24,7 @@ mkdir -p meta storage
 
 echo "Start Cluster..."
 
-cd ${STARROCKS_HOME}/../../..
+cd ${STARROCKS_HOME}/../../../starrocks
 
 export COMMON_PATH=`pwd`
 cd ${STARROCKS_HOME}
