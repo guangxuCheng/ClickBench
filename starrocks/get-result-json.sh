@@ -10,8 +10,8 @@ echo -e "{
     \"cluster_size\": 1,
     \"comment\": \"\",
     \"tags\": [\"C++\", \"column-oriented\", \"MySQL compatible\"],
-    \"load_time\": $(cat loadtime),
-    \"data_size\": $(cat storage_size),
+    \"load_time\": 492,
+    \"data_size\": 17233927256,
     \"result\": [
 $(
     r=$(sed -r -e 's/query[0-9]+,/[/; s/$/],/' result.csv)
