@@ -22,7 +22,7 @@ end_time=$((SECONDS + duration))
 
 while [ $SECONDS -lt $end_time ]
 do
-    mysql -h 127.0.0.1 -P9030 -uroot -D hits -e "$selected_query"
+    mysql -h 127.0.0.1 -P9030 -uroot -D hits -e "$selected_query" >/dev/null
 done
 
 kill -INT $perf_pid
@@ -40,6 +40,6 @@ perf script -i perf.data &> perf.unfold
 ./FlameGraph/stackcollapse-perf.pl perf.unfold &> perf.folded
 ./FlameGraph/flamegraph.pl perf.folded > perf.svg
 
-mv perf.svg clickbench_${query_index}.html
+mv perf.svg profile/clickbench_${query_index}.html
 
 rm perf.data perf.unfold perf.folded

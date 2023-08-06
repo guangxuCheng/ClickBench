@@ -10,6 +10,7 @@ fi
 
 pid=$(ps aux | grep starrocks_be | grep -v grep | awk '{print $2}')
 
+mkdir profile
 # 执行 get_perf_10s.sh 脚本 b-a 次
 for ((i=$a; i<=$b; i++))
 do
