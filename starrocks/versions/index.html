@@ -441,7 +441,7 @@ const data = [
 <div class="header stick-left">
     <span class="nowrap themes"><span id="toggle-dark">🌚</span><span id="toggle-light">🌞</span></span>
     <h1>ClickHouse Versions Benchmark</h1>
-    <a href="/">各个系统排名</a> | <a href="profile/">各个版本火焰图</a> | <a href="versions/">版本间性能对比</a>
+    <a href="/">各个系统排名</a> | <a href="/profile/">各个版本火焰图</a> | <a href="/versions/">版本间性能对比</a>
 </div>
 
 <table class="selectors-container stick-left">
@@ -671,7 +671,7 @@ function renderSummary(filtered_data) {
         if (!elem.fake) {
             let link = document.createElement('a');
             link.appendChild(document.createTextNode(`${elem.version}`));
-            link.href = "https://github.com/ClickHouse/ClickBench/blob/main/versions/" + elem.source;
+            link.href = "https://github.com/guangxucheng/ClickBench/blob/main/versions/" + elem.source;
             td_name.appendChild(link);
         } else {
             td_name.appendChild(document.createTextNode(elem.version));
