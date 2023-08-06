@@ -42,4 +42,4 @@ perf script -i perf.data &> perf.unfold
 
 mv perf.svg profile/clickbench_${query_index}.html
 
-rm perf.data perf.unfold perf.folded
+rm perf.data perf.unfold perf.folded perf.data.old
