@@ -4,7 +4,7 @@
 if [[ ! -d results ]]; then mkdir results; fi
 
 echo -e "{
-    \"system\": \"SelectDB\",
+    \"system\": \"StarRocks\",
     \"date\": \"$(date '+%Y-%m-%d')\",
     \"machine\": \"$(sudo dmidecode -s system-product-name), 500gb gp2\",
     \"cluster_size\": 1,
