@@ -6,10 +6,10 @@ VERSION=$1
 # DOWNLOAD_URL=https://releases.starrocks.io/starrocks/StarRocks-3.0.0-preview.tar.gz
 # Install
 #wget $DOWNLOAD_URL
-rm -rf StarRocks-${VERSION}
-tar zxf StarRocks-${VERSION}.tar.gz
+#rm -rf StarRocks-${VERSION}
+#tar zxf StarRocks-${VERSION}.tar.gz
 
-cd StarRocks-${VERSION}/
+cd StarRocks-3.1/
 
 # Install dependencies
 sudo yum install -y java-11-amazon-corretto.x86_64 mysql
@@ -20,7 +20,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 # Create directory for FE and BE
 IPADDR=`hostname -i`
 export STARROCKS_HOME=`pwd`
-mkdir -p meta storage
+# mkdir -p meta storage
 
 echo "Start Cluster..."
 
