@@ -40,6 +40,6 @@ perf script -i perf.data &> perf.unfold
 ./FlameGraph/stackcollapse-perf.pl perf.unfold &> perf.folded
 ./FlameGraph/flamegraph.pl perf.folded > perf.svg
 
-mv perf.svg profile/clickbench_${query_index}.html
+mv perf.svg clickbench_${query_index}.html
 
 rm perf.data perf.unfold perf.folded perf.data.old
