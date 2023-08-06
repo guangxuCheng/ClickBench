@@ -1,2 +1,7 @@
 *.bak
 .idea
+starrocks/FlameGraph
+starrocks/StarRocks*
+starrocks/profile
+starrocks/result.csv
+starrocks/run.log
