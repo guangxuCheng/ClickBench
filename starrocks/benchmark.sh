@@ -12,9 +12,12 @@ tar zxvf StarRocks-${VERSION}.tar.gz
 cd StarRocks-${VERSION}/
 
 # Install dependencies
-sudo yum install -y java-1.8.0-openjdk-devel.x86_64 mysql
+#sudo yum install -y java-1.8.0-openjdk-devel.x86_64 mysql
+#
+#export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk/
+sudo yum install -y java-11-amazon-corretto.x86_64 mysql
 
-export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk/
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
 export PATH=$JAVA_HOME/bin:$PATH
 
 # Create directory for FE and BE
@@ -60,10 +63,10 @@ result=`curl --location-trusted \
 END=$(date +%s)
 LOADTIME=$(echo "$END - $START" | bc)
 echo "Load data costs $LOADTIME seconds"
-cat $result
-cat $result|while read line
+echo $result
+echo $result|while read line
 do
-  result=$(echo line | grep "Fail")
+  result=$(echo $line | grep "Fail")
   if [[ "$result" != "" ]]
   then
     echo "Load data Fail"
