@@ -16,7 +16,7 @@ mapfile -t sql_queries < "$queries_file"
 selected_query=${sql_queries[$((query_index - 1))]}
 
 perf record -e cpu-clock -g -p $pid &
-perf_pid=$!
+perf_pid=$(ps -ef | grep "perf record" | grep -v "grep" | awk '{print $2}')
 
 duration=10
 end_time=$((SECONDS + duration))
@@ -29,13 +29,6 @@ done
 kill -INT $perf_pid
 
 wait $perf_pid
-
-exit_status=$?
-
-if [ $exit_status -ne 0 ] && [ $exit_status -ne 130 ]; then
-    echo "Error: 'perf record' command did not terminate correctly, exit_status=$exit_status"
-    exit 1
-fi
 
 perf script -i perf.data &> perf.unfold
 ./FlameGraph/stackcollapse-perf.pl perf.unfold &> perf.folded
