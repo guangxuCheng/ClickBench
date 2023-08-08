@@ -5,3 +5,4 @@ starrocks/StarRocks*
 starrocks/profile
 starrocks/result.csv
 starrocks/run.log
+starrocks/hits.tsv*
