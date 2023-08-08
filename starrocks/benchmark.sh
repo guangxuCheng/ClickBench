@@ -7,7 +7,7 @@ VERSION=$1
 # Install
 #wget $DOWNLOAD_URL
 rm -rf StarRocks-${VERSION}
-tar zxvf StarRocks-${VERSION}.tar.gz
+tar zxf StarRocks-${VERSION}.tar.gz
 
 cd StarRocks-${VERSION}/
 
