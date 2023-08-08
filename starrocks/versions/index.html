@@ -671,7 +671,7 @@ function renderSummary(filtered_data) {
         if (!elem.fake) {
             let link = document.createElement('a');
             link.appendChild(document.createTextNode(`${elem.version}`));
-            link.href = "https://github.com/guangxucheng/ClickBench/blob/main/versions/" + elem.source;
+            link.href = "https://github.com/guangxuCheng/ClickBench/blob/main/starrocks/versions//" + elem.source;
             td_name.appendChild(link);
         } else {
             td_name.appendChild(document.createTextNode(elem.version));
