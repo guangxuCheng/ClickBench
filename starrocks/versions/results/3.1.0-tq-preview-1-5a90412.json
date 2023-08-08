@@ -1,12 +1,5 @@
 {
-    "system": "StarRocks",
-    "date": "2023-08-08",
-    "machine": "c6a.4xlarge, 500gb gp2",
-    "cluster_size": 1,
-    "comment": "",
-    "tags": ["C++", "column-oriented", "MySQL compatible"],
-    "load_time": 492,
-    "data_size": 17233927256,
+    "version": "3.1.0-tq-preview-1-5a90412",
     "result": [
 [0.04,0.04,0.04],
 [0.97,0.03,0.04],
