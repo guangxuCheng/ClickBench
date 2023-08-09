@@ -6,8 +6,8 @@ VERSION=$1
 # DOWNLOAD_URL=https://releases.starrocks.io/starrocks/StarRocks-3.0.0-preview.tar.gz
 # Install
 #wget $DOWNLOAD_URL
-#rm -rf StarRocks-${VERSION}
-#tar zxf StarRocks-${VERSION}.tar.gz
+rm -rf StarRocks-${VERSION}
+tar zxf StarRocks-${VERSION}.tar.gz
 
 cd StarRocks-${VERSION}/
 
