@@ -1,172 +1,173 @@
 Cloning into 'FlameGraph'...
 get perf query: 1
-./get_perf_10s.sh: line 29: kill: (28015) - No such process
+[ perf record: Woken up 228 times to write data ]
+[ perf record: Captured and wrote 59.565 MB perf.data (381075 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 2
-[ perf record: Woken up 219 times to write data ]
-[ perf record: Captured and wrote 59.281 MB perf.data (350432 samples) ]
+[ perf record: Woken up 194 times to write data ]
+[ perf record: Captured and wrote 51.874 MB perf.data (303151 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 3
-[ perf record: Woken up 222 times to write data ]
-[ perf record: Captured and wrote 59.611 MB perf.data (401869 samples) ]
+[ perf record: Woken up 225 times to write data ]
+[ perf record: Captured and wrote 60.304 MB perf.data (408059 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 4
 [ perf record: Woken up 233 times to write data ]
-[ perf record: Captured and wrote 68.072 MB perf.data (449939 samples) ]
+[ perf record: Captured and wrote 67.006 MB perf.data (438371 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 5
-[ perf record: Woken up 209 times to write data ]
-[ perf record: Captured and wrote 54.260 MB perf.data (373171 samples) ]
+[ perf record: Woken up 190 times to write data ]
+[ perf record: Captured and wrote 49.706 MB perf.data (334576 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 6
-[ perf record: Woken up 230 times to write data ]
-[ perf record: Captured and wrote 60.687 MB perf.data (418009 samples) ]
+[ perf record: Woken up 228 times to write data ]
+[ perf record: Captured and wrote 59.978 MB perf.data (412350 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 7
-[ perf record: Woken up 172 times to write data ]
-[ perf record: Captured and wrote 47.311 MB perf.data (325576 samples) ]
+[ perf record: Woken up 173 times to write data ]
+[ perf record: Captured and wrote 46.853 MB perf.data (321054 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 8
-[ perf record: Woken up 127 times to write data ]
-[ perf record: Captured and wrote 36.347 MB perf.data (221362 samples) ]
+[ perf record: Woken up 140 times to write data ]
+[ perf record: Captured and wrote 39.748 MB perf.data (239932 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 9
-[ perf record: Woken up 201 times to write data ]
-[ perf record: Captured and wrote 52.640 MB perf.data (346911 samples) ]
+[ perf record: Woken up 196 times to write data ]
+[ perf record: Captured and wrote 51.834 MB perf.data (337410 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 10
-[ perf record: Woken up 218 times to write data ]
-[ perf record: Captured and wrote 57.427 MB perf.data (360930 samples) ]
+[ perf record: Woken up 200 times to write data ]
+[ perf record: Captured and wrote 53.938 MB perf.data (336305 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 11
-[ perf record: Woken up 233 times to write data ]
-[ perf record: Captured and wrote 65.139 MB perf.data (374585 samples) ]
+[ perf record: Woken up 263 times to write data ]
+[ perf record: Captured and wrote 72.233 MB perf.data (410330 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 12
-[ perf record: Woken up 249 times to write data ]
-[ perf record: Captured and wrote 69.470 MB perf.data (396409 samples) ]
+[ perf record: Woken up 246 times to write data ]
+[ perf record: Captured and wrote 68.915 MB perf.data (388711 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 13
-[ perf record: Woken up 236 times to write data ]
-[ perf record: Captured and wrote 64.181 MB perf.data (399472 samples) ]
+[ perf record: Woken up 238 times to write data ]
+[ perf record: Captured and wrote 64.322 MB perf.data (405271 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 14
-[ perf record: Woken up 635 times to write data ]
-[ perf record: Captured and wrote 78.787 MB perf.data (538915 samples) ]
+[ perf record: Woken up 289 times to write data ]
+[ perf record: Captured and wrote 79.011 MB perf.data (534149 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 15
-[ perf record: Woken up 249 times to write data ]
-[ perf record: Captured and wrote 67.609 MB perf.data (460262 samples) ]
+[ perf record: Woken up 243 times to write data ]
+[ perf record: Captured and wrote 65.886 MB perf.data (446667 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 16
-[ perf record: Woken up 195 times to write data ]
-[ perf record: Captured and wrote 52.346 MB perf.data (333572 samples) ]
+[ perf record: Woken up 211 times to write data ]
+[ perf record: Captured and wrote 56.537 MB perf.data (356401 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 17
-[ perf record: Woken up 223 times to write data ]
-[ perf record: Captured and wrote 58.347 MB perf.data (371659 samples) ]
+[ perf record: Woken up 216 times to write data ]
+[ perf record: Captured and wrote 56.369 MB perf.data (362904 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 18
-[ perf record: Woken up 229 times to write data ]
-[ perf record: Captured and wrote 60.253 MB perf.data (396860 samples) ]
+[ perf record: Woken up 223 times to write data ]
+[ perf record: Captured and wrote 58.686 MB perf.data (381782 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 19
-[ perf record: Woken up 211 times to write data ]
-[ perf record: Captured and wrote 55.992 MB perf.data (358653 samples) ]
+[ perf record: Woken up 207 times to write data ]
+[ perf record: Captured and wrote 55.031 MB perf.data (352525 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 20
-[ perf record: Woken up 2 times to write data ]
-[ perf record: Captured and wrote 2.377 MB perf.data (16507 samples) ]
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 2.193 MB perf.data (15146 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 21
-[ perf record: Woken up 116 times to write data ]
-[ perf record: Captured and wrote 32.031 MB perf.data (134799 samples) ]
+[ perf record: Woken up 69 times to write data ]
+[ perf record: Captured and wrote 19.060 MB perf.data (76549 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 22
-[ perf record: Woken up 400 times to write data ]
-[ perf record: Captured and wrote 128.081 MB perf.data (571507 samples) ]
+[ perf record: Woken up 430 times to write data ]
+[ perf record: Captured and wrote 126.935 MB perf.data (568593 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 23
-[ perf record: Woken up 184 times to write data ]
-[ perf record: Captured and wrote 50.035 MB perf.data (199209 samples) ]
+[ perf record: Woken up 175 times to write data ]
+[ perf record: Captured and wrote 51.901 MB perf.data (207091 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 24
-[ perf record: Woken up 256 times to write data ]
-[ perf record: Captured and wrote 73.604 MB perf.data (407636 samples) ]
+[ perf record: Woken up 330 times to write data ]
+[ perf record: Captured and wrote 89.767 MB perf.data (487949 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 25
-[ perf record: Woken up 239 times to write data ]
-[ perf record: Captured and wrote 66.958 MB perf.data (351913 samples) ]
+[ perf record: Woken up 224 times to write data ]
+[ perf record: Captured and wrote 64.166 MB perf.data (338367 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 26
-[ perf record: Woken up 277 times to write data ]
-[ perf record: Captured and wrote 86.954 MB perf.data (494295 samples) ]
+[ perf record: Woken up 326 times to write data ]
+[ perf record: Captured and wrote 91.597 MB perf.data (517864 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 27
-[ perf record: Woken up 247 times to write data ]
-[ perf record: Captured and wrote 70.794 MB perf.data (374369 samples) ]
+[ perf record: Woken up 246 times to write data ]
+[ perf record: Captured and wrote 71.192 MB perf.data (378569 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 28
-[ perf record: Woken up 386 times to write data ]
-[ perf record: Captured and wrote 117.689 MB perf.data (556301 samples) ]
+[ perf record: Woken up 406 times to write data ]
+[ perf record: Captured and wrote 121.796 MB perf.data (576342 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 29
-[ perf record: Woken up 334 times to write data ]
-[ perf record: Captured and wrote 88.497 MB perf.data (486139 samples) ]
+[ perf record: Woken up 343 times to write data ]
+[ perf record: Captured and wrote 90.341 MB perf.data (493848 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 30
-[ perf record: Woken up 101 times to write data ]
-[ perf record: Captured and wrote 28.278 MB perf.data (193947 samples) ]
+[ perf record: Woken up 96 times to write data ]
+[ perf record: Captured and wrote 26.342 MB perf.data (179718 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 31
-[ perf record: Woken up 290 times to write data ]
-[ perf record: Captured and wrote 81.517 MB perf.data (504349 samples) ]
+[ perf record: Woken up 300 times to write data ]
+[ perf record: Captured and wrote 81.043 MB perf.data (500750 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 32
-[ perf record: Woken up 224 times to write data ]
-[ perf record: Captured and wrote 62.360 MB perf.data (381067 samples) ]
+[ perf record: Woken up 257 times to write data ]
+[ perf record: Captured and wrote 70.263 MB perf.data (433177 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 33
-[ perf record: Woken up 328 times to write data ]
-[ perf record: Captured and wrote 87.392 MB perf.data (571684 samples) ]
+[ perf record: Woken up 317 times to write data ]
+[ perf record: Captured and wrote 84.161 MB perf.data (536122 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 34
-[ perf record: Woken up 271 times to write data ]
-[ perf record: Captured and wrote 73.785 MB perf.data (450783 samples) ]
+[ perf record: Woken up 282 times to write data ]
+[ perf record: Captured and wrote 77.844 MB perf.data (473108 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 35
-[ perf record: Woken up 270 times to write data ]
-[ perf record: Captured and wrote 74.743 MB perf.data (464302 samples) ]
+[ perf record: Woken up 281 times to write data ]
+[ perf record: Captured and wrote 75.372 MB perf.data (465388 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 36
-[ perf record: Woken up 244 times to write data ]
-[ perf record: Captured and wrote 65.667 MB perf.data (461699 samples) ]
+[ perf record: Woken up 257 times to write data ]
+[ perf record: Captured and wrote 68.147 MB perf.data (478863 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 37
-[ perf record: Woken up 207 times to write data ]
-[ perf record: Captured and wrote 58.050 MB perf.data (348548 samples) ]
+[ perf record: Woken up 210 times to write data ]
+[ perf record: Captured and wrote 58.144 MB perf.data (349651 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 38
-[ perf record: Woken up 195 times to write data ]
-[ perf record: Captured and wrote 55.343 MB perf.data (324497 samples) ]
+[ perf record: Woken up 192 times to write data ]
+[ perf record: Captured and wrote 53.271 MB perf.data (313747 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 39
-[ perf record: Woken up 188 times to write data ]
-[ perf record: Captured and wrote 52.672 MB perf.data (291221 samples) ]
+[ perf record: Woken up 189 times to write data ]
+[ perf record: Captured and wrote 53.652 MB perf.data (296615 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 40
-[ perf record: Woken up 246 times to write data ]
-[ perf record: Captured and wrote 67.967 MB perf.data (434755 samples) ]
+[ perf record: Woken up 248 times to write data ]
+[ perf record: Captured and wrote 68.258 MB perf.data (436821 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 41
-[ perf record: Woken up 179 times to write data ]
-[ perf record: Captured and wrote 50.089 MB perf.data (278572 samples) ]
+[ perf record: Woken up 181 times to write data ]
+[ perf record: Captured and wrote 50.151 MB perf.data (278593 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 42
-[ perf record: Woken up 181 times to write data ]
-[ perf record: Captured and wrote 50.233 MB perf.data (278635 samples) ]
+[ perf record: Woken up 180 times to write data ]
+[ perf record: Captured and wrote 49.994 MB perf.data (277044 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
 get perf query: 43
-[ perf record: Woken up 122 times to write data ]
-[ perf record: Captured and wrote 33.343 MB perf.data (189606 samples) ]
+[ perf record: Woken up 121 times to write data ]
+[ perf record: Captured and wrote 34.863 MB perf.data (198158 samples) ]
 rm: cannot remove ‘perf.data.old’: No such file or directory
