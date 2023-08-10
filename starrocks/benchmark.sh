@@ -44,8 +44,12 @@ sleep 30
 echo "Start to download data..."
 # Prepare Data
 cd ../
-wget --no-verbose --continue 'https://datasets.clickhouse.com/hits_compatible/hits.tsv.gz'
-gzip -d hits.tsv.gz
+if [ ! -f "/home/ec2-user/hits.tsv" ]; then
+    wget --no-verbose --continue 'https://datasets.clickhouse.com/hits_compatible/hits.tsv.gz'
+    gzip -d hits.tsv.gz
+else
+    cp /home/ec2-user/hits.tsv .
+fi
 
 # Create Table
 mysql -h 127.0.0.1 -P9030 -uroot -e "CREATE DATABASE hits"
