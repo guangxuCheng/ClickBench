@@ -85,6 +85,7 @@ rm hits.tsv*
 du -bcs StarRocks-${VERSION}/storage/
 # Dataset contains 99997497 rows
 mysql -h 127.0.0.1 -P9030 -uroot hits -e "SELECT count(*) FROM hits"
+mysql -h 127.0.0.1 -P9030 -uroot hits -e "set global enable_pipeline=false;"
 
 # Run queries
 ./run.sh 2>&1 | tee run.log
