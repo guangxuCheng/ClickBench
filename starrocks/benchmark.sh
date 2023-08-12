@@ -89,8 +89,8 @@ mysql -h 127.0.0.1 -P9030 -uroot hits -e "set global enable_pipeline=false;set g
 
 # Run queries
 ./run.sh 2>&1 | tee run.log
-echo $?
-if [ $? -ne 0 ]
+cat run.log|grep ERROR
+if [ $? -eq 0 ]
 then
   echo "Run queries failed"
   exit 1
