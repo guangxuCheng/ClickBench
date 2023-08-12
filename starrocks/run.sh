@@ -14,6 +14,7 @@ cat queries.sql | while read -r query; do
         RES=$(mysql -vvv -h127.1 -P9030 -uroot hits -e "${query}" | perl -nle 'print $1 if /\((\d+\.\d+)+ sec\)/' ||:)
 
         if [[ $RES == "" ]]; then
+            echo "exit run"
             exit 1
         fi
         echo -n "${RES}" | tee -a result.csv
