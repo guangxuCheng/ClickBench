@@ -11,7 +11,7 @@ cat queries.sql | while read -r query; do
 
     echo -n "query${QUERY_NUM}," | tee -a result.csv
     for i in $(seq 1 $TRIES); do
-        RES=$(mysql -vvv -h127.1 -P9030 -uroot hits -e "${query}" | perl -nle 'print $1 if /\((\d+\.\d+)+ sec\)/' ||:)
+        RES=$(mysql -vvv -h127.1 -P9030 -uroot hits -e "enable_pipeline=false;${query}" | perl -nle 'print $1 if /\((\d+\.\d+)+ sec\)/' ||:)
 
         result=`echo $RES|grep "ERROR"`
         if [ $? -eq 0 ]; then
