@@ -90,4 +90,10 @@ mysql -h 127.0.0.1 -P9030 -uroot hits -e "set global enable_pipeline=false;"
 # Run queries
 ./run.sh 2>&1 | tee run.log
 
+if [ $? -ne 0 ]
+then
+  echo "Run queries failed"
+  exit 1
+fi
+
 sed -r -e 's/query[0-9]+,/[/; s/$/],/' run.log
