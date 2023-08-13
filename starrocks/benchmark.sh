@@ -47,6 +47,7 @@ cd ../
 if [ ! -f "/home/ec2-user/hits.tsv" ]; then
     wget --no-verbose --continue 'https://datasets.clickhouse.com/hits_compatible/hits.tsv.gz'
     gzip -d hits.tsv.gz
+    mv hits.tsv /home/ec2-user/
 #else
 #    cp /home/ec2-user/hits.tsv .
 fi
