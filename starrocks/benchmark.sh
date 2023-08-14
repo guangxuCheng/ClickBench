@@ -88,7 +88,7 @@ du -bcs StarRocks-${VERSION}/storage/
 mysql -h 127.0.0.1 -P9030 -uroot hits -e "SELECT count(*) FROM hits"
 #mysql -h 127.0.0.1 -P9030 -uroot hits -e "set global enable_pipeline=false;set global exec_mem_limit=21474836480;"
 echo "wait compaction to finished"
-sleep 600
+# sleep 600
 echo "sleep awake... to run queries"
 # Run queries
 ./run.sh 2>&1 | tee run.log
