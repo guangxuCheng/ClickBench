@@ -32,6 +32,8 @@ fe/bin/start_fe.sh --daemon
 
 # Start Backend
 echo "storage_root_path = ${STARROCKS_HOME}/storage" >> be/conf/be.conf
+echo "cumulative_compaction_num_threads_per_disk=16" >> be/conf/be.conf
+echo "base_compaction_num_threads_per_disk=16" >> be/conf/be.conf
 be/bin/start_be.sh --daemon
 
 # Setup cluster
