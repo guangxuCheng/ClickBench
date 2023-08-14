@@ -32,10 +32,6 @@ fe/bin/start_fe.sh --daemon
 
 # Start Backend
 echo "storage_root_path = ${STARROCKS_HOME}/storage" >> be/conf/be.conf
-#echo "cumulative_compaction_num_threads_per_disk=4" >> be/conf/be.conf
-#echo "base_compaction_num_threads_per_disk=4" >> be/conf/be.conf
-echo "write_buffer_size=209715200"  >> be/conf/be.conf
-echo "load_process_max_memory_limit_percent=90"  >> be/conf/be.conf
 
 be/bin/start_be.sh --daemon
 
@@ -93,7 +89,7 @@ du -bcs StarRocks-${VERSION}/storage/
 mysql -h 127.0.0.1 -P9030 -uroot hits -e "SELECT count(*) FROM hits"
 #mysql -h 127.0.0.1 -P9030 -uroot hits -e "set global enable_pipeline=false;set global exec_mem_limit=21474836480;"
 echo "wait compaction to finished"
-#sleep 60
+sleep 300
 echo "sleep awake... to run queries"
 # Run queries
 ./run.sh 2>&1 | tee run.log
