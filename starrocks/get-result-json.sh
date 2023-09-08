@@ -6,7 +6,7 @@ if [[ ! -d results ]]; then mkdir results; fi
 echo -e "{
     \"system\": \"StarRocks\",
     \"date\": \"$(date '+%Y-%m-%d')\",
-    \"machine\": \"$(sudo dmidecode -s system-product-name), 500gb gp2\",
+    \"machine\": \"$(sudo dmidecode -s system-product-name|sed 's/48xlarge/metal/g'), 500gb gp2\",
     \"cluster_size\": 1,
     \"comment\": \"\",
     \"tags\": [\"C++\", \"column-oriented\", \"MySQL compatible\"],
@@ -19,5 +19,5 @@ $(
 )
     ]
 }
-" | tee results/"$(sudo dmidecode -s system-product-name).json"
+" | tee results/"$(sudo dmidecode -s system-product-name|sed 's/48xlarge/metal/g').json"
 
