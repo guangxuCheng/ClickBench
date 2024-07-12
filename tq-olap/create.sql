@@ -105,6 +105,6 @@ CREATE TABLE hits (
     URLHash BIGINT NOT NULL,
     CLID INT NOT NULL
 )
-PRI KEY (CounterID, EventDate, UserID, EventTime, WatchID)
-DISTRIBUTED BY HASH(UserID) BUCKETS 192
+DUPLICATE KEY (CounterID, EventDate, UserID, EventTime, WatchID)
+DISTRIBUTED BY HASH(UserID) BUCKETS 16
 PROPERTIES ( "replication_num"="1");
